@@ -1,46 +1,111 @@
-# Getting Started with Create React App
+# GitHub Search - DevFinder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React application for searching GitHub users and viewing their profiles. Built with TypeScript, Redux Saga, and Ant Design.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+**[View the live demo here](https://hurgotdev.github.io/github-search/)**
 
-### `yarn start`
+## ✨ Features
 
-Runs the app in the development mode.\
+- **GitHub User Search**: Search for GitHub users by username
+- **User Profiles**: View detailed user profiles with repositories and information
+- **Responsive Design**: Mobile-friendly interface built with Ant Design
+- **Real-time Search**: Instant search results with loading states
+- **Modern UI**: Clean and intuitive user interface
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: React 18 with TypeScript
+- **State Management**: Redux Toolkit + Redux Saga
+- **UI Library**: Ant Design
+- **Styling**: Styled Components
+- **HTTP Client**: Axios
+- **Routing**: React Router DOM
+- **Build Tool**: Create React App
+- **Deployment**: GitHub Pages
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/hurgotdev/github-search.git
+cd github-search
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Start the development server:
+```bash
+npm start
+# or
+yarn start
+# or
+pnpm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📜 Available Scripts
 
-### `yarn test`
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run deploy` - Deploys to GitHub Pages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏗️ Project Structure
 
-### `yarn build`
+```
+src/
+├── modules/
+│   ├── search/          # Search functionality
+│   └── profile/         # User profile views
+├── redux/               # State management
+│   ├── actions/         # Redux actions
+│   ├── reducers/        # Redux reducers
+│   ├── sagas/           # Redux sagas
+│   └── selectors/       # Redux selectors
+├── shared/              # Shared components and utilities
+│   ├── components/      # Reusable components
+│   ├── services/        # API services
+│   └── styles/          # Global styles
+└── App.tsx              # Main application component
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Configuration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application uses the GitHub API for fetching user data. No API key is required for basic user search functionality.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📱 Usage
 
-### `yarn eject`
+1. **Search Users**: Enter a GitHub username in the search bar
+2. **View Results**: Browse through the search results
+3. **View Profile**: Click on a user to view their detailed profile
+4. **Navigate**: Use the browser navigation to go back to search
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🤝 Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📄 License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project is open source and available under the [MIT License](LICENSE).
 
-## Learn More
+## 👨‍💻 Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**HurgotDev** - [GitHub Profile](https://github.com/hurgotdev)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+Made with ❤️ using React and TypeScript
