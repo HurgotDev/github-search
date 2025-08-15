@@ -11,7 +11,7 @@ function App() {
         <Provider store={reduxStore}>
             <GlobalStyles />
             <MainLayout>
-                <BrowserRouter>
+                <BrowserRouter basename="/github-search">
                     <Switch>
                         <Route exact path="/">
                             <Search.SearchPage />
